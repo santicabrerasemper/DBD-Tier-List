@@ -1,4 +1,4 @@
-plugins {
+﻿plugins {
     id("com.android.application") version "8.7.3"
     id("org.jetbrains.kotlin.android") version "2.0.21"
     id("org.jetbrains.kotlin.plugin.compose") version "2.0.21"
@@ -21,7 +21,7 @@ android {
         getByName("main") {
             manifest.srcFile("src/main/AndroidManifest.xml")
             java.srcDirs("src/main/java")
-            res.srcDirs(emptyList<String>())
+            res.srcDirs("src/main/res")
         }
     }
 }
@@ -40,3 +40,4 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
 }
+
